@@ -5,8 +5,7 @@ import { Calendar as ReactCalendar } from "react-calendar";
 
 import { useMemo, useState } from 'react';
 
-function Calendar(props) {
-
+function Calendar(props) {  
   const{ date, lang } = props;
   const backgroundColor="whitesmoke"; 
 
@@ -52,8 +51,6 @@ function Calendar(props) {
     <div style={{background: backgroundColor}}>
       <ReactCalendar  onChange={onChange1} value={value1} />
     </div>
-
-
 
     <div>
       <ReactCalendar onChange={onChange2} value={value2}/>
